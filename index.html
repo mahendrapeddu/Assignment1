@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript">
+<!--
+var imgObj = null;
+function init(){
+   imgObj = document.getElementById('myImage');
+   imgObj.style.position= 'relative'; 
+   imgObj.style.left = '0px'; 
+}
+function moveRight(){
+   imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+}
+window.onload =init;
+//-->
+</script>
+</head>
+<body>
+<form>
+<img id="myImage" src="images/harrisburg.jpg" />
+<h2>Press the button below to move the image to the right</h2>
+<input id="clickMeButton" type="button" value="Click Me" onclick="moveRight();" />
+
+</form>
+</body>
+</html>
